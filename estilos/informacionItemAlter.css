@@ -1,0 +1,18 @@
+@import url(galeria.css);
+@import url(especsAlter.css);
+@import url(video.css);
+body{
+    overflow: none;
+    /* background: linear-gradient(rgb(255, 132, 1), rgb(0, 0, 0)); */
+}
+
+
+.imagen-item{
+    text-align: center;
+    background-color: #1B1B1B !important;
+}
+
+.info-alter{
+    background: linear-gradient(rgb(255, 132, 1), rgb(0, 0, 0));
+    color: white;
+}

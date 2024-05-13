@@ -1,0 +1,62 @@
+/* Formulario */
+#contacto{
+    background: #662d91de;
+    padding: 150px 0px 50px 0px;
+    color: white;
+    height: auto;
+}
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.datos-form{
+    display: flex;
+}
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input,
+form textarea{
+    background-color: #662d91de;
+    border-radius: 10px;
+    border: 2px solid #570f8e;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+form input:focus,
+form textarea:focus{
+    border-color: #33006a;
+    box-shadow: 0 0 0 1px #33006a;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color:#fff;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.boton-formulario .boton-saber-mas:hover{
+    background-color: #33006a;
+}

@@ -1,0 +1,48 @@
+
+/* Header */
+header{
+    height: 100px;
+    background-color: #241446;
+    padding: 0 50px ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/* Centrar elementos */
+    box-shadow: 0 0 20px #fff;
+    position: fixed;/* Borrar a partir de aqui en caso de errores */
+    z-index: 100;
+    width: 100%;
+}
+.logo{
+    height: 100px;
+    padding-bottom: 8px;
+}
+.menu a{
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transform: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    text-shadow: 0 0 10px #fff;
+
+    /* color: rgba(255,255,255,0.3); */
+}
+#check{
+    display: none;
+}

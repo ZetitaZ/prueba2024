@@ -1,0 +1,31 @@
+/* seccion ¿porque comprar un buen mouse? */
+/* Objetivo */
+#porque{
+    padding: 0 50px;
+    background-image: url(../imagenes/Extras/mouseBanner2.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+.contenido-mice{
+    padding: 40px 100px;
+}
+.contenido-mice h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+    text-align: center;
+}
+.contenido-mice h2 span{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contenido-mice{
+    position: relative;
+    color: #c7c7c7;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

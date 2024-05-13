@@ -1,0 +1,73 @@
+/* Banner */
+#banner{
+    padding: 0 50px;
+    background-image: url(../imagenes/Extras/banner.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
+    animation: slide 35s infinite linear;
+}
+/* Efecto de nubre sobre la imagen */
+#banner::before{/*la simbologia '::' se utiliza como selector */
+    content: '';
+    background: rgba(0, 0, 199, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left:0;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url('../imagenes/Extras/banner1.jpg');
+    }
+    20%{
+        background-image: url('../imagenes/Extras/banner1.jpg');
+    }
+
+    21%{
+        background-image: url('../imagenes/Extras/banner5.jpg');
+    }
+    40%{
+        background-image: url('../imagenes/Extras/banner5.jpg');
+    }
+
+    41%{
+        background-image: url('../imagenes/Extras/banner.jpg');
+    }
+    60%{
+        background-image: url('../imagenes/Extras/banner.jpg');
+    }
+
+    61%{
+        background-image: url('../imagenes/Extras/banner3.jpg');
+    }
+    80%{
+        background-image: url('../imagenes/Extras/banner3.jpg');
+    }
+
+    81%{
+        background-image: url('../imagenes/Extras/banner2.jpg');
+    }
+    99%{
+        background-image: url('../imagenes/Extras/banner2.jpg');
+    }
+}

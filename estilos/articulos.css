@@ -1,0 +1,35 @@
+/* 'Diseño articulos seleccionItem.html' */
+/* Recomendaciones */
+#articulos{
+    background: linear-gradient(black,rgb(92,42,111),#22529A);
+    color:white;
+}
+#articulos div{
+    padding: 20px 20px;
+    display:flex;
+    align-items: center;
+    text-align: justify;
+    border: 2px solid rgb(181, 135, 250);
+    box-shadow: 0 0 20px #fff;
+}
+
+#reversed-mice{
+    flex-direction: row-reverse;
+}
+
+#reversed-mice p{
+    margin-left: 0 !important;
+    border: 1px beige;
+}
+
+#articulos img{
+    height: 300px;
+    border: 5px solid #53227c;
+}
+#articulos p{
+    margin: 50px;
+}
+#articulos img:hover{
+    box-shadow: 0 0 20px #fff;
+    background: #ffffff4d;
+}

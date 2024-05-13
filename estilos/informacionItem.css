@@ -1,0 +1,58 @@
+body{
+    background-image: url('../imagenes/Extras/infoBackground1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-info{
+    padding: 125px 125px 25px 125px;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 70% auto;
+    box-shadow: 0 0 20px #fff;
+}
+
+.imagen-articulo{
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    width: 500px;
+}
+
+.informacion-articulo{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.informacion-articulo h2{
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff
+    ;
+}
+.informacion-articulo p{
+    padding: 5px;
+    text-align: justify;
+    color: white;
+}
+/* .contenedor-info .imagen-articulo ,.informacion-articulo{
+    border: 1px solid black;
+} */
+
+.galeria{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+
+.galeria .imagen-v{
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+}

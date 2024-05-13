@@ -1,0 +1,37 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(objetivo.css);
+@import url(recomendaciones.css);
+@import url(contacto.css);
+@import url(porqueMice.css);
+@import url(articulos.css);
+@import url(item.css);
+@import url(objetivoComponentes.css);
+@import url(informacionItemAlter.css);
+@import url(informacionItem.css);
+
+@import url(responsive.css);
+/* Reset de estilos y margenes */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;/*subrayados*/
+    list-style: none;/*dibujos listas*/
+    box-sizing: border-box;/*Elementos no se salen del contenedor*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    background: #241446;
+    color: #ebcffb;
+    text-align: center;
+    padding: 10px 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px
+}
+
+.redes img{
+    color: #fff;
+    height: 25px;
+    width: 25px;
+}
