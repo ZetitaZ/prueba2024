@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yiyi Information Hardware</title>
+    <meta charset="TFU-8/">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <script src="../scripts/script.js" type="text/javascript"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+</head>
+
+<body>
+    <!-- Menú -->
+    <header>
+
+        <!--Crear icono de barras para el menu-->
+        <a href="../index.html"><img src="../imagenes/Logos/LOGO yih V2.png" alt="Logo pagina" class="logo"></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!-- <i class="fa-solid fa-bars"></i>-->
+            &#8801 <!--Codigo para hamburguesa-->
+        </label>
+
+        <nav class="menu">
+            <a href="seleccionMouse.html">Mice</a>
+            <a href="seleccionTeclado.html">Teclados</a>
+            <a href="seleccionAudifono.html">Audifonos</a>
+            <a href="#">Componentes</a>
+            <a href="contacto.html">Contactanos</a>
+            <label for="check" class="esconder-menu">
+                &#215<!--Codigo para X-->
+            </label>
+        </nav>
+    </header>
+
+    <section id="porque-componentes">
+        <div class="contenido-componentes">
+            <h2><span>La combinacion decisiva</span></h2>
+            <p>No es una mala racha, solo malas decisiones
+                <br>Elegir sabiamente los componenetes correctos para una buena experiencia
+                debe ser tu prioridad.
+            </p>
+        </div>
+    </section>
+    <!-- Placas de video Procesadores Placas Madre -->
+    <section id="items">
+
+        <!-- TARJETAS DE VIDEO -->
+
+        <img src="../imagenes/Graficas/AMD Radeon RX 6800 XT.png" alt=""
+        onclick="mostrarInformacion('Tarjeta Grafica RX 6800XT',
+        'La tarjeta XT gráfica AMD Radeon™ RX 6800 XT, potenciada con la arquitectura AMD RDNA™ 2 y equipada con 72 potentes unidades de procesamiento mejoradas, 128MB de la flamante tecnología AMD Infinity Cache y 16GB de memoria GDDR6 dedicada, está diseñada para alcanzar velocidades de cuadros ultraaltas y jugar en 4K con una calidad deslumbrante.')">
+
+        <img src="../imagenes/Graficas/MSI GTX 1660 Super.png" alt="" 
+        onclick="mostrarInformacion('Tarjeta Grafica MSI GTX 1660 Super',
+        'La tarjeta GTX 1660 Super de MSI viene a renovarse con Shaders Turing, memoria GDDR6 Ultrarapida, con el novedoso diseño termico Twin Frozr7 y una estetica llamativa para los gamers mas viciados')">
+
+
+        <!-- PROCESADORES -->
+
+        <!-- <img src="../imagenes/Procesadores/Ryzen77700.png" alt=""
+        onclick="mostrarInformacion('Procesador AMD Ryzen 7 7700X',
+        'El procesador Ryzen de septima generacion, Ryzen 7 7700X, dedicado al gaming viene con 8 nucleos y 16 hilos para un rendimiento optimo en conjunto co las tarjetas graficas, llegando a un tubo boost de 5.4GHz y un caché inteligente de 3 niveles llegando hasta 32MB, muestra su potencia con la arquitectura Zen4 de AMD')"> -->
+        <a href="informacionItemRyzen7.html">
+            <img src="../imagenes/Procesadores/Ryzen77700.png" alt="">
+        </a>
+        
+        <img src="../imagenes/Procesadores/Core i5 10400F.png" alt=""
+        onclick="mostrarInformacion('Procesador Intel Core i5 12600KF', 
+        'El procesador Intel Core i5 10400F viene con 6nucleos y 12 hilos para realizar tanto operaciones de computo como ofrecer un buen rendimiento a la hora de jugar, llegando a un overclock d e 4.3GHZ, con 3 niveles de cache controlados por el Intel SMart Cache, trabajando con la arquitectura Comet Lake')">
+
+        <!-- PLACAS MADRE -->
+
+        <img id="placaAsus" src="../imagenes/Placas Madre/ASUS ROG Maximus XII Apex.png" alt=""
+        onclick="mostrarInformacionNoBtn('Placa Madre ASUS ROG Maximus XII Apez',
+        '&#187 Socket LGA 1200 preparado para procesadores Intel Core de decima generacion <br> &#187 tres puertos M.2, Puertos Sata 6Gb/s x6 <br> &#187 Puertos USB traseros x10 <br> &#187 Conexion de audio')">
+        
+
+        <img id="placaAsus" src="../imagenes/Placas Madre/AsusRogStrixB650.png" alt=""
+        onclick="mostrarInformacionNoBtn('Placa Madre ASUS ROG STRIX B650E-F',
+        '&#187 Socket AM5 preparado para procesadores Ryzen Serie 7000 <br> &#187 tres puertos M.2 <br> &#187 USB 3.2 TypeC x1, Puertos USB traseros x11 <br> &#187 HDMI 2.1, Display Port')">
+
+
+
+    </section>
+
+    <!-- Ventana de informacion del item -->
+    <div class="ventana-informacion" id="ventana-informacion">
+        <button onclick="ocultarInformacion()">&#215</button><br><br>
+        <h3 id="nombre-item">Nombre Elemento</h3>
+        <br>
+        <p id="datos-item">
+            Data
+        </p>
+        <br>
+        <button id="ir-a" onclick="location.href='informacionRX6800.html'">Ir a especificaciones</button>
+    </div>
+
+        <!-- Ventana de informacion del item Sin Boton-->
+        <div class="ventana-informacion2" id="ventana-informacion2">
+            <button onclick="ocultarInformacion()">&#215</button><br><br>
+            <h3 id="nombre-item2">Nombre Elemento</h3>
+            <br>
+            <p id="datos-item2">
+                Data
+            </p>
+        </div>
+
+    <!-- NIEBLA PARA OSCURECER PANTALLA -->
+    <div class="overlay" id="overlay" onclick="ocultarInformacion()"></div>
+    <footer>
+        <p>&copy;2024 Ezequiel</p>
+        <div class="redes">
+            <a href="mailto:ezequiel.solorzano.aranibar@gmail.com">
+                <img src="../imagenes/iconos/emailP.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/zetin.zeton/" target="_blank">
+                <img src="../imagenes/iconos/instagramP.png" alt="">
+            </a>
+            <a href="https://wa.me/59173737838" target="_blank">
+                <img src="../imagenes/iconos/whatsappP.png" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+    
+</html>
